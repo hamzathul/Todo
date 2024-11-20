@@ -13,6 +13,6 @@ router.get("/", getAllTodos);
 router.post("/", addTodo);
 router.put("/:id", UpdateTodo);
 router.put("/:id/toggle", TodoStatus);
-router.delete("/:id", deleteTodo);
+router.delete("/", deleteTodo);
 
 export default router;
