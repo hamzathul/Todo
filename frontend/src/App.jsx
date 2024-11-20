@@ -1,5 +1,5 @@
-import { useState } from "react";
 import HomePage from "./pages/HomePage";
+import {Toaster} from 'react-hot-toast'
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
        <div className="relative z-20 pt-20">
         <HomePage/>
        </div>
+       <Toaster/>
       </div>
   );
 }
