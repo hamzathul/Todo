@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/sever.js",
     "dev": "nodemon backend/server.js",
-    "build":"yarn install && yarn install --prefix frontend && yarn build --prefix frontend"
+    "build":"yarn && yarn --cwd frontend && yarn build --cwd frontend"
   },
   "type": "module",
   "keywords": [],
