@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/todos";
+const API_URL =
+  import.meta.env.VITE_NODE_ENV === "development"
+    ? "http://localhost:5000/api/todos"
+    : "/api/todos";
 
 export const getTodos = () => axios.get(API_URL);
 
